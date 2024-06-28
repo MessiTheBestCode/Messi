@@ -1,0 +1,92 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	Paolo Tutor
+	</title> 
+
+<link rel="stylesheet" href="style.css">
+<Style>
+
+.n1
+{
+font-size: 25px;
+font-weight: 100;
+font-family: sans-serif;
+text-align: center;
+background-color: rgb(100, 50, 100)
+}
+
+</style>
+</head>
+<body>
+
+	<h1 class="n1">HTML CLASS</h1>
+	<h5 id="n2">Self Intro</h5>
+	<p id="ml" class="text" style="font-size: 100px; text-align: center">Made in Japan</p>
+	<img src="https://th.bing.com/th/id/R.f43b2e147d2b0e04564532b2ff5bbd77?rik=VKWm0tEk9tm9tA&riu=http%3a%2f%2flogos-download.com%2fwp-content%2fuploads%2f2016%2f05%2fOlympus_logo_logotype.png&ehk=NUexr9w18B%2ffAovq%2fbcRIj4rKz8Wgjb3wWy7gro7Kgs%3d&risl=&pid=ImgRaw&r=0" alt="A 	descriptive text" class="center">	
+
+	<div class="box" id="myBox"></div>
+	<button onClick="colorChanger()" class="center"> Tap me </button>
+
+<table class="center">
+  	<tr>
+    		<th>Name</th>
+		<td>Benigno Paolo Tutor</td>	
+  	</tr>
+  	<tr>
+  	<tr>
+    		<th>Team</th>
+		<td>FS1</td>	
+  	</tr>
+  	<tr>
+    		<th>Language</th>
+		<td>English, Tagalog, Japanese, Bisaya</td>	
+  	</tr>
+  	<tr>
+    		<th>Goal</th>
+		<td>Learn more about FS1 project, Gain HTML Skills</td>	
+  	</tr>
+  	<tr>
+    		<th>Hobby</th>
+		<td>Sports, Watching Anime, Cooking, Games</td>	
+  	</tr>
+  	<tr>
+    		<th>Fun Facts</th>
+		<td>Born in Japan, Benichan elementary nickname</td>	
+  	</tr>
+</table>
+
+<br>
+<a href="https://en.wikipedia.org/wiki/Olympus_Corporation" class="center">Visit</a>
+</body>
+<script>
+	function colorChanger(){
+	var text=document.getElementById("ml");
+	var randomColor = "#"+ Math.floor(Math.random()*16777215).toString(16);
+	text.style.color =randomColor;
+	}
+
+$(document).ready(function(){
+	$('#fadeInButton').click(function(){
+		$('#myBox2').fadeIn('slow');
+					});
+	$('#fadeOutButton').click(function(){
+		$('#myBox2').fadeOut('slow');
+					});
+});
+</script>
+
+
+
+<div id="myBox2" class=center>
+	HELLO
+</div>
+<div class=center>
+<button id="fadeInButton">FADEIN</button>
+<button id="fadeOutButton">FADEOUT</button>
+</div>
+
+
+</html>

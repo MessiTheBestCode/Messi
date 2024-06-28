@@ -1,0 +1,26 @@
+*{
+	padding:0;
+	margin:0;	
+}
+
+h5
+{
+font-size: 25px;
+font-weight: 100;
+font-family: sans-serif;
+text-align: center;
+background-color: rgb(400, 1, 55)
+
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+
+body {
+    background-image: url('COW.jpg');
+    background-position: center;
+    background-attachment: fixed;
+}
